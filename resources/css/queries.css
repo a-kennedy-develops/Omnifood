@@ -45,7 +45,7 @@
   /* City features section */
   .icon-small {
     width: 17px;
-    margin-right: 10px;
+    margin-right: 5px;
   }
   .city-feature {
     font-size: 90%;
@@ -87,7 +87,7 @@
   }
 
   .app-screen {
-    width: 40px;
+    width: 40%;
   }
 
   /* Will add mobile nav later */
