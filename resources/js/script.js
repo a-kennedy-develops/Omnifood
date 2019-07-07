@@ -1,5 +1,9 @@
 $(document).ready(function() {
 
+    var nav = $('.js--main-nav');
+    var icon = $('.js--nav-icon i');
+    // var winwidth = $(window).innerWidth();
+
     /* Sticky nav start and end point */ 
 $('.js--section-features').waypoint(function(direction) {
         if (direction == "down") {
@@ -47,9 +51,6 @@ $('.js--section-features').waypoint(function(direction) {
 
     /* Mobile (Small Screen) Navigation */
     $('.js--nav-icon').click(function() {
-        var nav = $('.js--main-nav');
-        var icon = $('.js--nav-icon i');
-
         nav.slideToggle(200);
 
         if (icon.hasClass('ion-navicon-round')) {
@@ -60,5 +61,12 @@ $('.js--section-features').waypoint(function(direction) {
             icon.removeClass('ion-close-round');
         }
     })
+
+    // $(window).resize(function() {
+    //     if (winwidth < 768) {
+    //     // $('.logo').hide();
+    //     // alert("TESTING")
+    //     }
+    //   });
 
 });
