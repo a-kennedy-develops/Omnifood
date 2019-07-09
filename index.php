@@ -469,7 +469,7 @@
       <div class="row">
         <form method="POST" action="resources/php/mailer-new.php" class="contact-form">
           
-          <!-- <div class="row">
+          <div class="row">
 
             <?php
 
@@ -483,7 +483,7 @@
 
             ?>
 
-          </div> -->
+          </div>
           
           <div class="row">
             <div class="col span-1-of-3">
