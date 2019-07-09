@@ -468,12 +468,24 @@
 
       <div class="row">
         <form method="POST" action="resources/php/mailer-new.php" class="contact-form">
+          
           <div class="row">
 
-            <div class="from-mesages success">
-              Thank you, your message has been sent!
-            </div>
-            
+            <?php
+
+            if($_GET['success'] == 1) {
+              echo "<div class=\"form-messages success\">Thank you, your message has been sent!</div>";
+            }
+
+            if($_GET['success'] == -1) {
+              echo "<div class=\"form-messages error\">Oh no! Something went wrong, please try again.</div>";
+            }
+
+            ?>
+
+          </div>
+          
+          <div class="row">
             <div class="col span-1-of-3">
               <label for="name">Name</label>
             </div>
